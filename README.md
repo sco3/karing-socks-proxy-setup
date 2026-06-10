@@ -55,4 +55,17 @@ For local SOCKS5 proxy with selective routing, you'll use port **3066** with rul
 
 Now that Karing is running as a local SOCKS5 proxy, configure your applications to use it:
 
-### On the Same Machine
+### Firefox Proxy Toggle Setup
+
+For quick and easy proxy switching in Firefox, use a proxy toggle extension (like FoxyProxy or Proxy SwitchyOmega). Configure it to use the local SOCKS5 proxy on port `3066`:
+
+![Firefox Proxy Toggle Settings](firefox-proxy-toggle-settings.png)
+
+**Configuration values:**
+- **Proxy Type:** SOCKS5
+- **Proxy Host:** `127.0.0.1`
+- **Port:** `3066`
+- **DNS over SOCKS:** Enabled (recommended)
+
+This allows you to toggle the proxy on/off with one click without digging into Firefox's network settings every time.
+
